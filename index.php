@@ -30,11 +30,11 @@
         Student ID: <u id displaystudent_id><?php echo $student_id; ?></u>
     </h3>
 
-    <button type="button" onclick="greetUser()">Greet User</button>
+    <button type="button" onclick="greetUser('<?php echo $username; ?>', '<?php echo $user_id; ?>', '<?php echo $number; ?>', '<?php echo $professor; ?>', '<?php echo $student_id; ?>')">Greet User</button>
     <script>
         //create a function that can hold the value of php variables
-        function greetUser(){
-            alert("Hello "+username+". "+"Your User ID is: "+user_id+"Your Number is: "+number+"Your Professor is: "+professor+"Your SR Code: "+student_id);
+        function greetUser(username, user_id, number, professor, student_id){
+            alert("Hello " +username+ ". "+"Your User ID is: " +user_id+ ". "+"Your Number is: " +number+ ". "+"Your Professor is: " +professor+ ". "+"Your SR Code: " +student_id+ ".");
         }
     </script>
 </body>
